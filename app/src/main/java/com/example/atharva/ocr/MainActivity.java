@@ -81,18 +81,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        /*new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this,User_Info.class);
-                startActivity(intent);
-                ((Activity) MainActivity.this).overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                finish();
-            }
-        },TIMEOUT);*/
-
-
+        getSupportActionBar().hide();
 
         Button ClickButton = (Button)findViewById(R.id.ClickButton);
 
